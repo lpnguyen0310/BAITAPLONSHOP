@@ -13,6 +13,7 @@
     cursor: pointer;
 }
 
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -52,7 +53,8 @@
 
 #menu{
     display: flex;
-    /* flex-direction: r; */
+    background-color: #bec3c1;
+   
     justify-content: space-around;
     
 }
