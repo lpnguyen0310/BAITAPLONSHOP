@@ -266,15 +266,17 @@
     height: 478px;
     margin:0px auto;
     margin-top:184px;
+    margin-bottom: 50px;
     
    
 }
 
 
 #comment h2{
-  
+    margin-top: 184px;
     text-align: center;
     font-size: 32px;
+    margin-bottom: 50px;
 }
 
 
@@ -282,13 +284,12 @@
 
 
 #comment_body{
-    margin-top:20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 400px;
     list-style: none;
-   overflow: hidden;
+    overflow: hidden;
 
 }
 
@@ -302,12 +303,20 @@
 #list-comment .item {
     width: 100%;
     height: 100%;
-    margin: auto;
     background:#362f2f;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     padding-top:30px;
+}
+
+#list-comment .item .star{
+    display: flex;
+    margin: 0px auto;
+    width: 50%  ;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
 }
 
 #list-comment .item .avatar {
@@ -322,7 +331,6 @@
 }
 
 #list-comment .item .text {
-    padding:20px 50px;
     color:#fff;
     text-align: center;
    
@@ -359,8 +367,8 @@
 /*================================footer===========================*/
 .footer{
     width: 100%;
-    background-color: #626A67   ;
-    height: 322px;
+    background-color: black;
+    height: 500px;
     margin-top: 338px;
     padding-top:57px;
     display: flex;
@@ -370,10 +378,15 @@
 
 .footer .box{
     width: 300px;
-    color: black;
+    color: white;
+    margin-right: 50px;
     
 }
 
+
+.footer .box p{
+    padding-top: 25px;
+}
 
 .footer .box .footer_Location .item{
     margin-bottom: 14px;
@@ -390,9 +403,16 @@
 .footer .box .footer_chinhsach .item{
     margin-bottom:14px ;
 }
+.footer .box .footer_Location .icon_contact{
+    margin-bottom: 35px;
+   display: flex;
+   width: 150px;
+   align-items: center;
+   justify-content: space-between;
+}
 
 .footer .box .footer_chinhsach, .item a{
-    color: black;
+    color:white;    
     text-decoration: none;
 }
 
