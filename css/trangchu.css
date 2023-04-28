@@ -51,13 +51,7 @@
     font-family:inherit;
 }
 
-#menu{
-    display: flex;
-    background-color: #bec3c1;
-   
-    justify-content: space-around;
-    
-}
+
 
 .dropdown-content {
     display: none;
@@ -67,6 +61,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     }
+    
 .dropdown-content a {
     
     color: black;
@@ -87,6 +82,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color:lightgrey;
 }
 
 #menu .search{
