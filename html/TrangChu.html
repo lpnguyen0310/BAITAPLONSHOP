@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/trangchu.css">
     <link rel="script" href="../js/script.js">
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0-web/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
 </head>
 <body>
     <div class="main">
@@ -54,7 +55,7 @@
                 <li><a href="">Liên hệ</a></li>
                 <li><a href="">About us</a></li>
             </ul>
-            <div class="search">
+            <div class= "search">
                 <div>
                     <input type="text" placeholder="Search...." alt="" >
                 </div>
@@ -63,6 +64,7 @@
                 </div>
             </div>
         </div>
+        
      
         <div class="center">
             <div id="banner">
@@ -340,5 +342,17 @@
 
     </div>
     <script src="../js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('menu').addClass('stiky');
+                }
+                else{
+                    $('menu').removeClass('stiky');
+                }
+            })
+        })
+    </script>
 </body>
 </html>
