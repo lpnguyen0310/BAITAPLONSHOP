@@ -84,12 +84,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0px; 
     background-color:lightgrey;
 
     transition: all  0.5s ease-in-out;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 #menu .search{
     display: flex;
@@ -159,28 +162,38 @@
 /*=========================Banner Center ===================*/
 #banner{
     display: flex;
-    height: 400px;
-    width: 100%;
-    padding:0px 45px;
-    position:relative;
+    height: 880px;
     margin: auto;
     margin-bottom: 45px;
-    background-image: url("../assets/bannerrr.png");
+    background-image: url("../assets/banner\ top.jpg");
+    justify-content: center;
+    text-align: center;
+    padding-top: 280px; 
     
 }
 
-#banner .box-left, #banner .box-right{
-    width: 50%;
-}
+
 
 #banner .box-left h2{
     font-size: 50px;
     margin-top: 30px;
+    align-items: center;
+    color: white;
 }
 
+/* #banner .box-left {
+    align-items: center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+} */
+
 #banner .box-left p{
-    padding-top: 10px;
-    color: red;
+    padding-top: 20px;
+    color: black;
+    font-size: 20px;
+    align-items: center;
 }
 
 #banner .box-left button{
@@ -192,12 +205,16 @@
     border-radius: 3px;
     font-weight: bold;
     transition: 0.4s;
+    font-size: 20px;
+
 }
 
-#banner .box-left button:hover{
+ #banner .box-left button:hover{
     background-color: red;
 }
 
+
+/*
 #banner .box-right{
     padding-left: 30px;
     display: flex;
@@ -216,24 +233,15 @@
 
 #banner .box-right img:nth-child(2){
     animation-delay: 1s;
-}
+} */
 
 
-@keyframes animation {
-    0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform: translateY(-10px);
-    }
-    
-}
 
 .to-bottom{
-    position: absolute;
+   
     bottom: -40px;
     left: 50%;
-    transform: translateX(-50%);
+    
 }
 
 
