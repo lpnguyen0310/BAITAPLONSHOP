@@ -92,6 +92,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    transform: translate(0,-15px);
   }
 
 #menu .search{
@@ -190,7 +191,7 @@
 } */
 
 #banner .box-left p{
-    padding-top: 20px;
+    padding-top: 2  0px;
     color: black;
     font-size: 20px;
     align-items: center;
