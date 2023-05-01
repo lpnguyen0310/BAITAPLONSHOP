@@ -20,6 +20,7 @@
     width: 100%;
     background-color: white;
     flex-direction: column;
+    position: relative;
    
 
 }
@@ -83,16 +84,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:lightgrey;
+    background-color:rgb(245, 242, 242);
+    transition: all  0.5s ease-in-out;
+    position: sticky;
+    top:0px;
+    z-index: 1;
 
-    transition: all  1s ease-in-out;
+ 
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transform: translate(0,-15px);
-  }
+
+
 
 #menu .search{
     display: flex;
