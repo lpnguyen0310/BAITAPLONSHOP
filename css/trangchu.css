@@ -195,6 +195,7 @@
     color: black;
     font-size: 20px;
     align-items: center;
+    margin-top: 25px;
 }
 
 #banner .box-left button{
@@ -207,11 +208,13 @@
     font-weight: bold;
     transition: 0.4s;
     font-size: 20px;
+    background-color: transparent;
+    border: 2px solid white;
 
 }
 
  #banner .box-left button:hover{
-    background-color: red;
+    background-color: white;
 }
 
 
@@ -251,7 +254,14 @@
 .center{
     width: 1250px;
     margin: auto;
-    height:2900px
+    height:1650px
+   
+}
+
+.center2{
+    width: 1250px;
+    margin: auto;
+    height:1100px
    
 }
 
@@ -337,7 +347,7 @@
     width:1180 px;
     height: 478px;
     margin:0px auto;
-    margin-top:184px;
+    margin-top:20px;
     margin-bottom: 50px;
     
    
@@ -405,6 +415,53 @@
 #list-comment .item .text {
     color:#fff;
     text-align: center;
+   
+}
+
+/*=============================DESIGN======================*/
+
+#design{
+    display: flex;
+    height: 580px;
+    margin-bottom: 50px;
+}
+
+#design .design_img_left img{
+    width: 760px;
+   
+}
+
+#design .design_title {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(195, 201, 199,0.1);
+  
+}
+
+#design .design_title .title h1 {
+  margin-bottom: 35px;
+  
+}
+
+
+#design .design_title a button{
+    background-color: #0a0a0b;
+    color: #fff;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-size: 16px;
+   
+}
+
+#design .design_img_right img{
+    width: 250px;
+    height: 580px;
    
 }
 
