@@ -85,7 +85,7 @@
     justify-content: space-between;
     align-items: center;
     background-color:lightgrey;
-
+    z-index: 1;
     transition: all  0.5s ease-in-out;
 }
 .sticky {
@@ -251,7 +251,7 @@
 .center{
     width: 1250px;
     margin: auto;
-    height:3600px
+    height:2900px
    
 }
 
@@ -449,7 +449,7 @@
 }
 
 .footer .box{
-    width: 300px;
+    width: 350px;
     color: white;
     margin-right: 50px;
     

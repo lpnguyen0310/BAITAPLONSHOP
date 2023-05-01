@@ -163,7 +163,7 @@
 
 .footer{
     width: 100%;
-    background-color: black;
+    background-color: #303036;
     height: 500px;
     margin-top: 338px;
     padding-top:57px;
@@ -173,7 +173,7 @@
 }
 
 .footer .box{
-    width: 300px;
+    width: 350px;
     color: white;
     margin-right: 50px;
     
