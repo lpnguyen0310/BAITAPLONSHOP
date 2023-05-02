@@ -89,6 +89,10 @@
     z-index: 1;
 }
 
+#menu .item :hover{
+    color:darkgoldenrod
+}   
+
 .sticky {
     position: fixed;
     top: 0;
@@ -173,6 +177,7 @@
     display: flex;
     justify-content: space-around;
     margin: auto;
+  
 }
 
 .footer .box{
