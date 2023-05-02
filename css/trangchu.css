@@ -262,7 +262,7 @@
 .center2{
     width: 1250px;
     margin: auto;
-    height:1100px
+    height: 1200px;
    
 }
 
@@ -499,7 +499,12 @@
 
 #design .design_img_left img{
     width: 760px;
+    transition: all 0.3s ease-in-out;
    
+}
+
+#design .design_img_left{
+    overflow: hidden;
 }
 
 #design .design_title {
@@ -533,14 +538,30 @@
 #design .design_img_right img{
     width: 250px;
     height: 580px;
-   
+    transition: all 0.3s ease-in-out;
+    
 }
+
+#design .design_img_right:hover img{
+    transform:  scale(1.1);
+}
+
+#design .design_img_left:hover img{
+    transform: scale(1.1);
+}
+
+#design .design_img_right{
+    overflow: hidden;
+}
+
 
 /* =================News==================*/
 
 #list_news{
     margin-top: 10px;
     display: flex;
+    justify-content: space-between;
+   
 }
 #list_news .item_news a{
     text-decoration: none;
@@ -548,6 +569,9 @@
 
 }
 
+#list_news .item_news{
+    padding-right: 25px;
+}
 #list_news .item_news div{
     padding: 5px 0px 5px 5px;
 
@@ -564,10 +588,77 @@
     transition: transform 1000ms;
 }
 
+
+
+/*====================bottem center=============*/
+
+#center_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+#center_bottom .box_bottom_left{
+    width: 760px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    font-size: 20px;
+    padding-top: 150px;
+    background-color: #f6f7f8;
+    font-family: "Montserrat", sans-serif;
+    padding-right: 15px;
+}
+
+#center_bottom .box_bottom_left h3{
+    font-size: 35px;
+    color:#535050;
+}
+
+#center_bottom .box_bottom_left p{
+    margin-top: 20px;
+    color:#535050;
+}
+
+#center_bottom .box_bottom_left a button{
+    margin-top: 25px;
+   width: 150px;
+   height: 40px;
+   font-size: 18px;
+   text-transform: uppercase;
+   background-color: #7A9C59;
+   color: #fff;
+   letter-spacing: 0.5;
+   border: none;
+   font-weight: bolder;
+}
+#center_bottom .box_bottom_right img{
+    width: 760px;
+    height: 500px;
+    transition: all 0.8s ease-in-out;
+    
+}
+
+#center_bottom .box_bottom_right{
+    overflow: hidden;
+    width: 760px;
+    height: 500px;
+}
+
+#center_bottom .box_bottom_right:hover img{
+    transform:  scale(1.1);
+
+}
+
+#center_bottom .box_bottom_left a button:hover{
+    background-color: darkgreen;
+}
+
 /*================================footer===========================*/
 .footer{
     width: 100%;
-    background-color: black;
+    background-color: #303036;
     height: 500px;
     margin-top: 338px;
     padding-top:57px;
