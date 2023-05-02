@@ -84,14 +84,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(245, 242, 242);
+    background-color:rgb(236, 229, 229);
     transition: all  0.5s ease-in-out;
-    position: sticky;
-    top:0px;
     z-index: 1;
-
- 
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translate(0,-15px);
+  }
 
 
 
@@ -140,7 +143,7 @@
 
 
 #menu .sticky{
-    background: #fff;
+    background: #dbd6d6;
     opacity: 0.9px;
 }
 
