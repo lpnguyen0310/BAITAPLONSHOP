@@ -1,0 +1,50 @@
+#headerbaner{
+    background-image: url("../assets/Aboutus_header.jpg");
+    height:510px ;
+    color: white;
+    text-align: start;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 15px;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+
+#center{
+    width: 1250px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+#center .text {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+#center  .row{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#center .row .row_infor h3{
+    margin-bottom: 20px;
+}
+#center .row .row_infor{
+    width: 590px;
+}
+
+#center .row .row_infor p{
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+#center .row .row_img img{
+    width: 600px;
+}
+
+#center .row_bottom img{
+    margin-bottom: 25px;
+    width: 600px;
+    
+}
