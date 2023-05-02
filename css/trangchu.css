@@ -170,6 +170,7 @@
     justify-content: center;
     text-align: center;
     padding-top: 280px; 
+
     
 }
 
@@ -315,6 +316,8 @@
     margin-bottom: 10px;
     width: 305px;
     border: 1px solid lightgray;
+  
+
  
 }
 
@@ -332,12 +335,80 @@
 
 }
 
-.item_product a img{
+/* .item_product a img{
     transition: 0.7s;
 }
 .item_product a:hover img{
     transform: scale(1.05);
+} */
+.item_product .buy{
+    display: flex;
+    justify-content: space-between;
+    background-color: #446084;
+    bottom: -55px;
+    padding: 10px 5px;
+    position: absolute;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    opacity: 0.85px;
 }
+.item_product .product_top {
+    position: relative;
+    overflow: hidden;
+}
+.item_product .product_top .buy a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+.item_product:hover .buy{
+   bottom: 0px;
+}
+
+
+.item_product:hover .product_top .box_hover {
+    filter: opacity(80%);
+}
+
+.item_product .product_top .buy a.buy_hover:hover,
+
+.item_product .product_top .buy a.buy_hover:active{
+    color: red;
+}
+
+
+
+
+/*=========================== hover anh ====================*/
+
+.box_hover{
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.box_hover .imgchange{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.box_hover:hover .imgchange{
+    right: -100%;
+    opacity: 1;
+}
+
+.item_product a{
+    display: flex;
+}
+
+.item_product a img{
+    width: 100%;
+
+}
+
 
 
 
