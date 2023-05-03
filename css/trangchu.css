@@ -44,6 +44,8 @@
 #header_top .item_right{
     display: flex;
     align-items: center;
+  
+    justify-content: space-between;
 }
 
 
@@ -84,9 +86,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(233, 227, 227,0.5);
+    background-color:rgb(233, 227, 227,0.9);
     z-index: 1;
     transition: all  0.5s ease-in-out;
+    padding-bottom: 0px;
 }
 
 #menu .item :hover{
@@ -113,7 +116,7 @@
     background-color: rgb(195, 201, 207);
     width: 300px;
     border: none;
-    border-radius: 2px;
+    border-radius: 1px;
     align-items: center;
     font-size: 20px;
     height: 25px;
@@ -123,7 +126,7 @@
     padding-top: 5px;
     background-color: rgb(195, 201, 207);
     width: 30px;
-    border-radius: 2px;
+    border-radius: 1px;
     height:25px ;
 }
 
@@ -133,7 +136,7 @@
     display: flex;
     text-decoration: none;
     font-size: 20px;
-    width: 510px;
+    width: 550px;
     justify-content: space-evenly;
     
 }
@@ -163,6 +166,16 @@
     font-size: 20px;
     color:#626A67;
     text-decoration: none;
+}
+
+
+#actions .item a:hover{
+    color:darkgoldenrod;
+}
+
+
+#actions .item a span:hover{
+    color:darkgoldenrod;
 }
 
 /*=========================Banner Center ===================*/
@@ -675,8 +688,6 @@
 .footer .box{
     width: 350px;
     color: white;
-    margin-right: 50px;
-    
 }
 
 
@@ -686,6 +697,14 @@
 
 .footer .box .footer_Location .item{
     margin-bottom: 14px;
+}
+
+.footer .box .footer_Location .item .item_email{
+    margin-top: 15px;
+}
+
+.footer .box .footer_Location .item .item_phones{
+    margin-top: 0px;
 }
 
 .footer .box .footer_Location {
@@ -700,7 +719,6 @@
     margin-bottom:14px ;
 }
 .footer .box .footer_Location .icon_contact{
-    margin-bottom: 35px;
    display: flex;
    width: 150px;
    align-items: center;
@@ -712,3 +730,13 @@
     text-decoration: none;
 }
 
+.input_email{
+    display: flex;
+}
+
+.input_email button{
+    color: white;
+    background-color: black;
+    border: none;
+    width: 80px;
+}

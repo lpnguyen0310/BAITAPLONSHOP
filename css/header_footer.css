@@ -12,7 +12,8 @@
     font-family:'Poppins', sans-serif;
     cursor: pointer;
 }
-/*============================================ HEADER ==================================*/
+
+/*=======================Header=====================*/
 .header{
     display: flex;
     justify-content: space-between;
@@ -20,7 +21,6 @@
     width: 100%;
     background-color: white;
     flex-direction: column;
-    position: relative;
    
 
 }
@@ -44,6 +44,8 @@
 #header_top .item_right{
     display: flex;
     align-items: center;
+  
+    justify-content: space-between;
 }
 
 
@@ -84,14 +86,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(236, 229, 229);
-    transition: all  0.5s ease-in-out;
+    background-color:rgb(233, 227, 227,0.9);
     z-index: 1;
+    transition: all  0.5s ease-in-out;
+    padding-bottom: 0px;
 }
 
 #menu .item :hover{
     color:darkgoldenrod
-}   
+}
 
 .sticky {
     position: fixed;
@@ -99,8 +102,6 @@
     width: 100%;
     transform: translate(0,-15px);
   }
-
-
 
 #menu .search{
     display: flex;
@@ -115,7 +116,7 @@
     background-color: rgb(195, 201, 207);
     width: 300px;
     border: none;
-    border-radius: 2px;
+    border-radius: 1px;
     align-items: center;
     font-size: 20px;
     height: 25px;
@@ -125,7 +126,7 @@
     padding-top: 5px;
     background-color: rgb(195, 201, 207);
     width: 30px;
-    border-radius: 2px;
+    border-radius: 1px;
     height:25px ;
 }
 
@@ -135,7 +136,7 @@
     display: flex;
     text-decoration: none;
     font-size: 20px;
-    width: 510px;
+    width: 550px;
     justify-content: space-evenly;
     
 }
@@ -147,7 +148,7 @@
 
 
 #menu .sticky{
-    background: #dbd6d6;
+    background: #fff;
     opacity: 0.9px;
 }
 
@@ -168,6 +169,17 @@
 }
 
 
+#actions .item a:hover{
+    color:darkgoldenrod;
+}
+
+
+#actions .item a span:hover{
+    color:darkgoldenrod;
+}
+
+
+/*================================footer===========================*/
 .footer{
     width: 100%;
     background-color: #303036;
@@ -175,25 +187,31 @@
     margin-top: 338px;
     padding-top:57px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: auto;
-  
 }
 
 .footer .box{
     width: 350px;
     color: white;
-    margin-right: 50px;
-    
 }
 
 
 .footer .box p{
     padding-top: 25px;
+    
 }
 
 .footer .box .footer_Location .item{
     margin-bottom: 14px;
+}
+
+.footer .box .footer_Location .item .item_email{
+    margin-top: 15px;
+}
+
+.footer .box .footer_Location .item .item_phones{
+    margin-top: 0px;
 }
 
 .footer .box .footer_Location {
@@ -208,7 +226,6 @@
     margin-bottom:14px ;
 }
 .footer .box .footer_Location .icon_contact{
-    margin-bottom: 35px;
    display: flex;
    width: 150px;
    align-items: center;
@@ -218,4 +235,15 @@
 .footer .box .footer_chinhsach, .item a{
     color:white;    
     text-decoration: none;
+}
+
+.input_email{
+    display: flex;
+}
+
+.input_email button{
+    color: white;
+    background-color: black;
+    border: none;
+    width: 80px;
 }
