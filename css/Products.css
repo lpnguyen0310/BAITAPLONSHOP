@@ -1,0 +1,181 @@
+#banner_center .header_banner img{
+    width: 1550px;
+    height: 500px;
+    margin-top: 25px;
+
+}
+
+#banner_center {
+    position: relative;
+}
+
+#banner_center .header_banner .banner_info{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    color: white;
+    top: 400px;
+    padding-left: 65px;
+    flex-direction: column;
+
+}
+
+#banner_center .header_banner .banner_info h1{
+    margin-bottom: 25px;
+}
+
+#center{
+    width: 1250px;
+    margin: auto;
+}
+
+#center .option{
+   display: flex;
+   justify-content: space-between;
+   
+   
+}
+#center .option .option_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 35px;
+
+}
+
+#center .option .option_info select{
+    width: 365px;
+    height: 45px;
+    border-color: white;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    transition-duration: 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out;
+}
+
+#center .option button{
+    margin-top: 55px;
+    display: block;
+    background-color: #0a0a0b;
+    height: 40px;
+    width: 120px;
+    color: white;
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+#center .option .option_info select option{
+    margin-bottom: 10px;
+}
+
+
+/*========================================= PRODUCT ====================================*/
+#list_product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+#list_product .item_product{
+    margin-bottom: 10px;
+    width: 305px;
+    border: 1px solid lightgray;
+    margin-top: 15px;
+  
+  
+
+ 
+}
+
+#list_product .item_product .name_product{
+    padding: 5px 0px 5px 3px;
+}
+
+#list_product .item_product .price{
+    padding: 5px 5px 5px 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+#list_product .item_product .fontheart{
+    padding: 5px 0px 5px 5px;
+
+}
+
+/* .item_product a img{
+    transition: 0.7s;
+}
+.item_product a:hover img{
+    transform: scale(1.05);
+} */
+.item_product .buy{
+    display: flex;
+    justify-content: space-between;
+    background-color: #446084;
+    bottom: -55px;
+    padding: 10px 5px;
+    position: absolute;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    opacity: 0.85px;
+}
+.item_product .product_top {
+    position: relative;
+    overflow: hidden;
+}
+.item_product .product_top .buy a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+.item_product:hover .buy{
+   bottom: 0px;
+}
+
+
+.item_product:hover .product_top .box_hover {
+    filter: opacity(80%);
+}
+
+.item_product .product_top .buy a.buy_hover:hover,
+
+.item_product .product_top .buy a.buy_hover:active{
+    color: red;
+}
+
+
+
+
+/*=========================== hover anh ====================*/
+
+.box_hover{
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.box_hover .imgchange{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.box_hover:hover .imgchange{
+    right: -100%;
+    opacity: 1;
+}
+
+.item_product a{
+    display: flex;
+}
+
+.item_product a img{
+    width: 100%;
+
+}
