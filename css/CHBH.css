@@ -1,0 +1,88 @@
+.main .banner {
+    background-image: url("../assets/CSDTBanner.jpg");
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+#center{
+    width: 1250px;
+    margin: auto;
+}
+
+#center .banner h1{
+    font-size: 45px;
+}
+
+#center .main_center{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+
+.banner h1{
+    font-size: 55px;
+}
+
+#center .main_center .nd{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 620px;
+
+}
+
+#center .main_center img{
+   
+    width: 620px;
+
+}
+#center .main_center .nd h2{
+    margin-top: 50px; 
+     
+
+}
+
+#center .main_center .nd ul{
+    margin-top: 20px;
+    padding-left: 50px;
+
+}
+
+#center .main_center .nd ul li{
+    margin-top: 10px;
+    padding-left: 50px;
+
+}
+
+#center .main_center .nd p{
+    margin-top: 20px;   
+}
+
+
+.banner_homepage{
+    background-image: url("../assets/bannerChinh.png");
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.banner_homepage h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.banner_homepage a button{
+    width: 160px;
+    height: 40px;
+}
