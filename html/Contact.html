@@ -7,6 +7,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="script" href="../js/script.js">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0-web/css/all.css">
@@ -17,37 +18,64 @@ width: 600px;
     </style>
 <body>
     <div class="main">
-        <div class="main">
-            <div class="header">
-                <div id="header_top">
-                    <div class="item_left">
+        <div class="header">
+            <div id="header_top">
+                <div class="item_left">
+                    <div class="item">
+                        <span> <i class="fa-solid fa-globe" style="color: #4b4a59;"></i> <span style="color:red">VN</span>| EN</span>
+                    </div>
+                    <div>
+                        <span><i class="fa-solid fa-phone-volume" style="color: #070b12; padding-right: 10px;"></i>1800 7200</span>
+                    </div>
+                    <div><a style="text-decoration: none; color: black;" href="../html/AboutUs.html">About us</a></div>
+                </div>
+                <div class="item_right">
+                    <div id="actions">
                         <div class="item">
-                            <span> <i class="fa-solid fa-globe" style="color: #4b4a59;"></i> <span style="color:red">VN</span>| EN</span>
+                            <a href=""><i class="fa-regular fa-heart fa-sm"></i></a>
                         </div>
-                        <div>
-                            <span><i class="fa-solid fa-phone-volume" style="color: #070b12; padding-right: 10px;"></i>1800 7200</span>
+                        <div class="item">
+                           <a href="../html/HeThongCuaHang.html" > <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i> </a>
                         </div>
-                        <div><a style="text-decoration: none; color: black;" href="../html/AboutUs.html">About us</a></div>
-                    </div>
-                    <div class="item_right">
-                        <div id="actions">
-                            <div class="item">
-                                <a href=""><i class="fa-regular fa-heart fa-sm"></i></a>
-                            </div>
-                            <div class="item">
-                               <a href="../html/HeThongCuaHang.html" > <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i> </a>
-                            </div>
-                             <div class="item">
-                                 <a href=""><img src="../assets/cart.png" alt=""></a>
-                             </div>
-                             <div  class="item">
-                                <a  style="color: #626A67; border:1px solid black ;border-radius: 8px;padding: 4px;font-size: 14px;" href="../html/Login.html"><span>Đăng nhập </span><i class="fa-solid fa-user fa-sm"></i></a>
-                               </div>
+                         <div class="item">
+                             <a href=""><img src="../assets/cart.png" alt=""></a>
                          </div>
-                    </div>
+                         <div  class="item">
+                            <a  style="color: #626A67; border:1px solid black ;border-radius: 8px;padding: 4px;font-size: 14px;" href="../html/Registered.html"><span>Đăng nhập </span><i class="fa-solid fa-user fa-sm"></i></a>
+                           </div>
+                     </div>
                 </div>
             </div>
-	<div class="row"  id="row-865702423">
+        </div>
+        <div  class="headermenu" id="menu">
+            <div class="logo">
+                <img src="../assets/logochinh.png" alt="">
+            </div>
+            <ul class="item">
+                <li><a href="../html/TrangChu.html">Trang  chủ</a> </li>
+                <div class="dropdown">
+                <li><a href="" class="dropbtn">Sản Phẩm <i class="fa-solid fa-angle-down"></i></a> 
+                    <div class="dropdown-content">
+                        <a href="#">Bàn</a>
+                        <a href="#">Ghế</a>
+                        <a href="#">Sofa</a>
+                      </div>
+                    </div>
+                </li>
+                <li><a href="../html/Blog.html">Góc cảm hứng</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="../html/AboutUs.html">About us</a></li>
+            </ul>
+            <div class= "search">
+                <div>
+                    <input type="text" placeholder="Search...." alt="" >
+                </div>
+                <div class="iconsearch">
+                    <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+                </div>
+            </div>
+        </div>
+	<div class="row mt-5"  id="row-865702423">
 
 
 		<div id="col-784136702" class="col small-12 large-12"  data-animate="fadeInUp">

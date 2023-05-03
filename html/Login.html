@@ -1,164 +1,61 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
-    <title>Trang đăng ký</title>
-    <script src="../LOGIN/js.js"></script>
-    <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0-web/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <link rel="stylesheet" href="../CSS/header_footer.css">
-    <style> 
-
-
-.login-page {
-  width: 500px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #4CAF50;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-.h2{
-  font-family: "Roboto", sans-serif;
-
-}
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website with Login & Registration Form</title>
+    <link rel="stylesheet" href="../css/dangnhap.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   </head>
   <body>
-  
-    <div class="main">
-     
-    <div class="login-page">
-      <div class="form">
-        <form class="register-form">
-          <h2>Registered Account</h2>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo"><img src="../assets/logo.png" alt=""></a>
 
-          <input type="text" placeholder="name"/>
-          <input type="password" placeholder="password"/>
-          <input type="text" placeholder="email address"/>
-          <button>create</button>
-          <p class="message">Already registered? <a href="../html/Registered.html">Sign In</a></p>
-        </form>
+      
+
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="../html/Registered.html" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">Don't have an account? <a href="../html/Registered.html" id="">Signup</a></div>
+          </form>
+        </div>
        
-      </div>
-    </div>
-    <div class="footer">
-      <div style="margin-left: 35px;" class="box">
-          <h2 style="margin-bottom: 10px;">Kết nối với chúng tôi</h2>
-          <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
-          <div class="logo1">
-              <img src="../assets/logo.png" alt="">
-          </div>
-          <p>Follow us</p>
-          <p style="font-size: 15px;">instagram-Youtube-Facebook</p>
-          <p style="padding: 8px; border: 2px solid white;width: 160px; margin-top: 20px;"><a style="text-decoration: none; color: white;" href="../html/HeThongCuaHang.html">Hệ thống cửa hàng</a></p>
+   
 
-      </div>
-      <div style="margin-left: 25px;" class="box">   
-          <h2 style="margin-bottom: 10px;">Nhà Xinh</h2>
-          <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
-          <ul class="footer_chinhsach"> 
-              <div class="item"> 
-                  <a href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Giới thiệu</a>
-              </div>
-              <div class="item"> 
-                  <a href="../html/ChinhSachDoiTraHang.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i> Chính sách đổi trả hàng</a>
-              </div>
-              <div class="item"> 
-                  <a  href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Thẻ hội viên</a>
-              </div>
-              <div class="item"> 
-                  <a href="../html/ChinhSachBaoHanh.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Chính sách bảo hành</a>
-              </div>
-              <div class="item"> 
-                  <a href="../html/ChinhSachBaoHanh.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Tuyển dụng</a>
-              </div>
-          </ul>
-      </div>
-      <div  style="margin-left: 25px;" class="box">   
-          <h2 style="margin-bottom: 10px;">Cảm hứng</h2>
-          <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
-          <ul class="footer_chinhsach"> 
-              <div class="item"> 
-                  <a href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Sản phẩm</a>
-              </div>
-              <div class="item"> 
-                  <a href="../html/ChinhSachDoiTraHang.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Ý tưởng và cảm hứng</a>
-              </div>
-          </ul>
-      </div>
-      <div class="box">
-          <h2 style="margin-bottom: 10px;">NEW LETTERS</h2>
-          <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
-          <div class="footer_Location">
-              <div class="icon_contact">
-                  <a href="https://www.facebook.com/Tus1812" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0e4095;"></i></i></a>
-                  <a href="" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4479d5;"></i>  </a>
-                  <a href="https://www.instagram.com/lp.nguyen03/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ce46bc;"></i> </i></a>
-              </div>
-              <div class="item">
-                  <div class="item_email">
-                      <p><i class="fa-solid fa-envelope fa-lg" style="color: #e3f20d;"></i><span style="padding-left: 10px;">:</span>nhaxinhcare@akacompany.com.vn</p><br>
-                  </div>
-                  
-              </div> 
-              <div class="item">
-                  <H3>Liên hệ</H3>
-                  <div class="item_phones">
-                      <p><i class="fa-solid fa-phone fa-sm" style="color: #d7d12d;"></i><span style="padding-left: 10px;">:</span>18007200</p>
-                  </div>
-              </div>
-              <div class="input_email"> 
-                  <input style="width: 180px; height: 30px;background-color: rgba(254, 248, 248, 0.89);border: #efeaea;" type="email" placeholder="Nhập email của bạn" >
-                  <button >ĐĂNG KÝ</button>
-              </div>
-          </div>
-      </div>
-  </div>
-
-</div>
-<script src="../js/script.js"></script>
+    <script src="../js/jslogin.js"></script>
+  </body>
 </html>

@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Trang đăng nhập</title>
+    <title>Trang đăng ký</title>
     <script src="../LOGIN/js.js"></script>
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0-web/css/all.css">
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <link rel="script" href="../js/script.js">
     <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet" href="../css/dangki.css">
     <style> 
 
 
-.login-page {
-  width: 500px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #4CAF50;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-.h2{
-  font-family: "Roboto", sans-serif;
 
-}
     </style>
   </head>
   <body>
+  
     <div class="main">
-     
-    <div class="login-page">
-      <div class="form">
-    
-        <form class="login-form">
-          <h2>Login Account</h2>
-          <input type="text" placeholder="username"/>
-          <input type="password" placeholder="password"/>
-         <button><a style="text-decoration: none; color: white;" href="../html/TrangChu.html">Login</a></button>
-          <p class="message">Not registered? <a href="../html/Login.html">Create an account</a></p>
-        </form>
-      </div>
+      <div class="header">
+        <div id="header_top">
+            <div class="item_left">
+                <div class="item">
+                    <span> <i class="fa-solid fa-globe" style="color: #4b4a59;"></i> <span style="color:red">VN</span>| EN</span>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-phone-volume" style="color: #070b12; padding-right: 10px;"></i>1800 7200</span>
+                </div>
+                <div><a style="text-decoration: none; color: black;" href="../html/AboutUs.html">About us</a></div>
+            </div>
+            <div class="item_right">
+                <div id="actions">
+                    <div class="item">
+                        <a href=""><i class="fa-regular fa-heart fa-sm"></i></a>
+                    </div>
+                    <div class="item">
+                       <a href="../html/HeThongCuaHang.html" > <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i> </a>
+                    </div>
+                     <div class="item">
+                         <a href=""><img src="../assets/cart.png" alt=""></a>
+                     </div>
+                     <div  class="item">
+                        <a  style="color: #626A67; border:1px solid black ;border-radius: 8px;padding: 4px;font-size: 14px;" href="../html/Registered.html"><span>Đăng nhập </span><i class="fa-solid fa-user fa-sm"></i></a>
+                       </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div  class="headermenu" id="menu">
+        <div class="logo">
+            <img src="../assets/logochinh.png" alt="">
+        </div>
+        <ul class="item">
+            <li><a href="../html/TrangChu.html">Trang  chủ</a> </li>
+            <div class="dropdown">
+            <li><a href="" class="dropbtn">Sản Phẩm <i class="fa-solid fa-angle-down"></i></a> 
+                <div class="dropdown-content">
+                    <a href="#">Bàn</a>
+                    <a href="#">Ghế</a>
+                    <a href="#">Sofa</a>
+                  </div>
+                </div>
+            </li>
+            <li><a href="../html/Blog.html">Góc cảm hứng</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="../html/AboutUs.html">About us</a></li>
+        </ul>
+        <div class= "search">
+            <div>
+                <input type="text" placeholder="Search...." alt="" >
+            </div>
+            <div class="iconsearch">
+                <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <form id="form" action="/">
+          <h1>Registration</h1>
+          <div class="input-control">
+              <label for="username">Username</label>
+              <input id="username" name="username" type="text">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="text">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="password">Password</label>
+              <input id="password"name="password" type="password">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="password2">Password again</label>
+              <input id="password2"name="password2" type="password">
+              <div class="error"></div>
+          </div>
+          <button type="submit">Sign Up</button>
+          <div class="login">
+            <a href="../html/Login.html">Dont't have an Account? Login now</a>
+          </div>
+      </form>
+      
+  </div>
     </div>
     <div class="footer">
       <div style="margin-left: 35px;" class="box">
@@ -157,5 +180,7 @@
   </div>
 
 </div>
-<script src="../js/script.js"></script>
+
+<script src="../js/dangki.js"></script>
+
 </html>
