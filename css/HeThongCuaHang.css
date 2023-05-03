@@ -1,0 +1,112 @@
+#banner_center .header_banner img{
+    width: 1550px;
+    height: 500px;
+    filter: brightness(70%);
+
+}
+
+#banner_center {
+    position: relative;
+}
+
+#banner_center .header_banner .banner_info{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    top: 370px;
+    padding: 15px;
+}
+
+#banner_center .header_banner .banner_info h1{
+    width: 780px;
+    font-size: 35px;
+    padding-left: 35px;
+}
+#banner_center .header_banner .banner_info .title{
+    margin-top: 15px;
+    width: 480px;
+    font-size: 17px;
+}
+
+#center{
+    width: 1300px;
+    margin: auto;
+}
+
+#select_center{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 335px;
+    align-items: center;
+}
+
+#select_center h2{
+    padding-top: 80px;
+}
+
+#select_center .option{
+    display: flex;
+    justify-content: space-evenly;
+   
+   
+}
+#select_center .option .option_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 35px;
+
+}
+
+#select_center .option .option_info select{
+    width: 365px;
+    height: 45px;
+    border-color: white;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    transition-duration: 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out;
+}
+
+#select_center .option button{
+    margin-top: 55px;
+    display: block;
+    background-color: #0a0a0b;
+    height: 40px;
+    width: 120px;
+    color: white;
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+
+#center .location_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#center .location_row .lc{
+    width: 385px;
+    height: 135px;
+}
+
+#center .location_row .lc p{
+    margin-bottom: 15px;
+}
+#center .location_row .lc button a{
+    text-decoration: none;
+    color: black;
+}
+
+#center .location_row .lc button{
+    width: 140px;
+    height: 35px;
+    background-color: white;
+}
+
+#center .location_row .lc button:hover{
+    border: none;
+   background-color: rgb(208, 208, 214);
+}

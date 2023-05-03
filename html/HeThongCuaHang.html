@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống cửa hàng </title>
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/HeThongCuaHang.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="script" href="../js/Design.js">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div id="header_top">
+                <div class="item_left">
+                    <div class="item">
+                        <span> <i class="fa-solid fa-globe" style="color: #4b4a59;"></i> <span style="color:red">VN</span>| EN</span>
+                    </div>
+                    <div>
+                        <span><i class="fa-solid fa-phone-volume" style="color: #070b12; padding-right: 10px;"></i>1800 7200</span>
+                    </div>
+                    <div><a style="text-decoration: none; color: black;" href="../html/AboutUs.html">About us</a></div>
+                </div>
+                <div class="item_right">
+                    <div id="actions">
+
+                        <div class="item">
+                           <a href="" > <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i> </a>
+                        </div>
+                         <div class="item">
+                             <a href=""><img src="../assets/cart.png" alt=""></a>
+                         </div>
+                         <div  class="item">
+                            <a  style="color: #626A67; border:1px solid black ;border-radius: 8px;padding: 4px;font-size: 14px;" href=""><span>Đăng nhập </span><i class="fa-solid fa-user fa-sm"></i></a>
+                           </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div  class="headermenu" id="menu">
+            <div class="logo">
+                <img src="../assets/logochinh.png" alt="">
+            </div>
+            <ul class="item">
+                <li><a href="../html/TrangChu.html">Trang  chủ</a> </li>
+                <div class="dropdown">
+                <li><a href="" class="dropbtn">Sản Phẩm</a> 
+                    <div class="dropdown-content">
+                        <a href="#">Bàn</a>
+                        <a href="#">Ghế</a>
+                        <a href="#">Sofa</a>
+                      </div>
+                    </div>
+                </li>
+                <li><a href="../html/Blog.html">Góc cảm hứng</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="../html/AboutUs.html">About us</a></li>
+            </ul>
+            <div class= "search">
+                <div>
+                    <input type="text" placeholder="Search...." alt="" >
+                </div>
+                <div class="iconsearch">
+                    <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="banner_center">
+            <div class="header_banner">
+                 <img src="../assets/HeThong2.jpg">
+                 <div class="banner_info">
+                     <h1>Hệ thống cửa hàng Nhà Xinh tại TP. Hồ Chí Minh, Hà Nội và Bình Dương</h1>
+                     <div class="title">
+                         <a style="text-decoration: none; color: white;" href="../html/TrangChu.html"><span>Trang chủ</span></a> /
+                         <span style="font-weight: bolder;"> Hệ thống cửa hàng Nhà Xinh tại TP. Hồ Chí Minh, Hà Nội và Bình Dương</span>
+                     </div>
+                 </div>
+            </div>
+         </div>
+        <div id="select_center">
+            <h2 style="text-align: center;">Lựa chọn thành phố và khu vực gần bạn</h2>
+            <div class="option">
+                <div class="option_info">
+                    <span>Tỉnh/Thành phố</span>
+                    <select name="city" id="city_select">
+                        <option value="">Select province/city</option>
+                        <option value="">TP HCM</option>
+                        <option value="">Bình Dương</option>
+                        <option value="">Hà Nội</option>
+                        <option value="">Bắc Cạn</option>
+                        <option value="">Bạc Liêu</option>
+                        <option value="">Bà Rịa- Vũng tàu</option>
+                        <option value=""> Đak Nông</option>
+                    </select>
+                </div>
+                <div class="option_info">
+                    <span>Quận / Huyện</span>
+                    <select name="city" id="city_select">
+                        <option value="">Chọn Quận / Huyện</option>
+                        <option value="">Quận 1</option>
+                        <option value="">Huyện Cần Giờ</option>
+                        <option value="">Quận 7</option>
+                        <option value="">Quận 2</option>
+                        <option value="">Quận 3</option>
+                        <option value="">Quận 4</option>
+                        <option value="">Quận 5</option>
+                    </select>
+
+                </div>
+                <div class="">
+                    <button>Tìm Kiếm</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="center">
+            <h3 style="margin-top: 25px;padding-bottom: 35px; font-size: 35px;">TP. HỒ CHÍ MINH</h3>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (THẢO ĐIỀN)</h4>
+                    <p>8h30 - 21h (Cả tuần)</p>
+                </div>
+                <div class="lc">
+                    <p>Diện tích: 900 m2 (Có chỗ đậu xe ô tô)</p>
+                    <p>Điện thoại: (028) 3535 1505 | (028) 3535 1506</p>
+                    <p>Email: nhaxinhthaodien@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>107 - 109 Xa Lộ Hà Nội, Phường Thảo Điền, Quận 2, Thành phố Hồ Chí Minh</p>
+                    <button><a href="https://www.google.com/maps/place/Nh%C3%A0+Xinh/@10.8016599,106.7387166,15z/data=!4m5!3m4!1s0x0:0xdcfb31733d5ee699!8m2!3d10.801661!4d106.7387165" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (PHÚ MỸ HƯNG)</h4>
+                    <p>8h30 - 20h00 (Từ thứ 2 đến thứ 6) & 8h30 - 20h30 (Thứ 7 & Chủ nhật)</p>
+                </div>
+                <div class="lc">
+                    <p>Diện tích: 3000m2 (Có chỗ đậu xe ô tô)</p>
+                    <p>Điện thoại: (028) 5413 6657</p>
+                    <p>Email: nhaxinh_pmh@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>CR3 - Khu thương mại Hồ Bán Nguyệt, 111 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
+                    <button><a href="https://www.google.com/maps/place/N%E1%BB%99i+th%E1%BA%A5t+Nh%C3%A0+Xinh/@10.7253503,106.7205726,15z/data=!4m2!3m1!1s0x0:0x96e5104d2a405547?sa=X&ved=2ahUKEwizy5zK3YD0AhXR_WEKHdHRCkEQ_BJ6BAhNEAU" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (HAI BÀ TRƯNG)</h4>
+                    <p>8h30 - 21h00</p>
+                </div>
+                <div class="lc">
+                    <p>Diện tích: 1.000 m2 (Có chỗ đậu xe ô tô)</p>
+                    <p>Điện thoại: (028) 6252 0022 - (028) 6251 2200</p>
+                    <p>Email: nhaxinh_hbt@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>187A Hai Bà Trưng, Phường 6, Quận 3, Thành phố Hồ Chí Minh</p>
+                    <button><a href="https://www.google.com/maps/place/Nh%C3%A0+Xinh/@10.785633,106.694013,15z/data=!4m2!3m1!1s0x0:0xe7e3fbe3cc98ea8d?sa=X&ved=2ahUKEwjIp_XZ3YD0AhUYDd4KHb79DLAQ_BJ6BAhGEAU" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (DIAMOND)</h4>
+                    <p>8h30 - 22h (Cả tuần)</p>
+                </div>
+                <div class="lc">
+                    <p>Điện thoại: (028) 2200 1079</p>
+                    <p>Email: nhaxinhdiamond@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>34 Lê Duẩn, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</p>
+                    <button><a href="https://www.google.com/maps/place/Diamond+Plaza/@10.780987,106.6984947,15z/data=!4m2!3m1!1s0x0:0x89a11cd90293c6cc?sa=X&ved=2ahUKEwiFndOx0Ir0AhVSo54KHXNGBmAQ_BJ6BAhdEAU" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <hr width="100%">
+            <h3 style="margin-top: 25px;padding-bottom: 35px; font-size: 35px;">Bình Dương</h3>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (BÌNH DƯƠNG)</h4>
+                    <p>8h30 - 19h00 (Cả tuần)</p>
+                </div>
+                <div class="lc">
+                    <p>Điện thoại: (027) 4222 2019</p>
+                    <p>Email: nhaxinhbd@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>442A Đại Lộ Bình Dương, Thành phố Thuận An</p>
+                    <button><a href="https://www.google.com/maps/place/Nh%C3%A0+Xinh+B%C3%ACnh+D%C6%B0%C6%A1ng/@10.8971876,106.7085423,15z/data=!4m5!3m4!1s0x0:0x983c4b1b10a61bf9!8m2!3d10.8971876!4d106.7085423" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <hr width="100%">
+            <h3 style="margin-top: 25px;padding-bottom: 35px; font-size: 35px;">Hà Nội</h3>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (SMART CITY)</h4>
+                    <p>10h00 - 22h00 (Từ thứ 2 đến thứ 6) & 9h30 - 22h00 (Thứ 7 & Chủ nhật)</p>
+                </div>
+                <div class="lc">
+                    <p>Điện thoại: (024) 3202 8027 / 3202 0306</p>
+                    <p>Email: nhaxinhsmartcity@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>Tầng 2, Vincom Mega Mall, KĐT Vinhomes Smart City, Phường Đại Mỗ, Quận Nam Từ Liêm, Hà Nội</p>
+                    <button><a href="https://www.google.com/maps/place/Nh%C3%A0+Xinh+Vincom+Smart+City/@21.0055746,105.7541997,15z/data=!4m2!3m1!1s0x0:0x2e19c77ff80f8413?sa=X&hl=vi&ved=2ahUKEwikvqvc9uD4AhXJmVYBHWjLB9gQ_BJ6BAhEEB8" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (YÊN HÒA)</h4>
+                    <p>8h30 - 21h00 (Cả tuần)</p>
+                </div>
+                <div class="lc">
+                    <p>Điện thoại: (024) 3782 1761 / 3782 1762</p>
+                    <p>Diện tích: 1.000 m2 (Có chỗ đậu xe ô tô)</p>
+                    <p>Email: nhaxinhyenhoa@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>Lầu 1 - Tòa nhà F4, 112 Trung Kính, Quận Cầu Giấy, Hà Nội</p>
+                    <button><a href="https://www.google.com/maps/place/N%E1%BB%99i+th%E1%BA%A5t+Nh%C3%A0+Xinh/@21.0175949,105.793815,15z/data=!4m2!3m1!1s0x0:0xedfd413f1123277a?sa=X&ved=2ahUKEwie5sz53YD0AhXZfXAKHVNLAHoQ_BJ6BAg_EAU" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (THỤY KHUÊ)</h4>
+                    <p>9h00 - 20h00 (Cả tuần)</p>
+                </div>
+                <div class="lc">
+                    <p>Diện tích: 3000 m2 (Có chỗ đậu xe ô tô)</p>
+                    <p>Điện thoại: (024) 3201 2118</p>
+                    <p>Email: nhaxinhthuykhue@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>Tầng 3, TTTM Sun Plaza - 69 Thuỵ Khuê, Quận Tây Hồ, Hà Nội (12 Hoàng Hoa Thám)</p>
+                    <button><a href="https://www.google.com/maps/place/Nh%C3%A0+Xinh/@21.0414923,105.8261336,15z/data=!4m2!3m1!1s0x0:0xf2a410301ebf0978?sa=X&ved=2ahUKEwiB5ren3oD0AhVMfXAKHXCSCqcQ_BJ6BAhMEAU" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (ĐỐNG ĐA)</h4>
+                    <p>10h00 - 20h30 (Từ thứ 2 đến thứ 6) & 9h30 - 20h30 (Thứ 7 & Chủ nhật)</p>
+                </div>
+                <div class="lc">
+                    <p>Diện tích: 700 m2 (Có chỗ đậu xe ô tô)</p>
+                    <p>Điện thoại: (024) 3761 7666</p>
+                    <p>Email: nhaxinhdongda@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>L4-04, Tầng 4, TTTM Vincom Center, 54 Nguyễn Chí Thanh, Quận Đống Đa, Hà Nội</p>
+                    <button><a href="https://www.google.com/maps/place/Nh%C3%A0+Xinh/@21.023261,105.8090191,15z/data=!4m2!3m1!1s0x0:0xac495fda2dde5b1f?sa=X&ved=2ahUKEwiZ6f-a3oD0AhVaeXAKHacQCUkQ_BJ6BAg7EAU" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+            <hr width="100%">
+            <h3 style="margin-top: 25px;padding-bottom: 35px; font-size: 35px;">Hưng Yên</h3>
+            <div class="location_row">
+                <div class="lc"> 
+                    <h4>CỬA HÀNG NHÀ XINH (ECOPARK)</h4>
+                    <p>8h30 - 17h30 (Cả tuần)</p>
+                </div>
+                <div class="lc">
+                    <p>(Có chỗ đậu xe ô tô)</p>
+                    <p>Điện thoại: (024) 6262 0739</p>
+                    <p>Email: nhaxinhecopark@akacompany.com.vn</p>
+                </div>  
+                <div class="lc">
+                    <p>Tòa nhà E1, Chung cư Rừng Cọ, KĐT Ecopark, Hưng Yên</p>
+                    <button><a href="https://www.google.com/maps/place/Nh%C3%A0+Xinh/@20.9725153,105.9281132,15z/data=!4m2!3m1!1s0x0:0xcea1730295e7fcb3?sa=X&ved=2ahUKEwi8-Yeu0Yr0AhUTVpQKHbU-CfcQ_BJ6BAg1EAU" target="_blank">Xem Hướng <i class="fa-solid fa-angle-right"></i></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div style="margin-left: 35px;" class="box">
+                <h2 style="margin-bottom: 10px;">Kết nối với chúng tôi</h2>
+                <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+                <div class="logo1">
+                    <img src="../assets/logo.png" alt="">
+                </div>
+                <p>Follow us</p>
+                <p style="font-size: 15px;">instagram-Youtube-Facebook</p>
+                <p style="padding: 8px; border: 2px solid white;width: 160px; margin-top: 20px;"><a style="text-decoration: none; color: white;" href="">Hệ thống cửa hàng</a></p>
+
+            </div>
+            <div style="margin-left: 25px;" class="box">   
+                <h2 style="margin-bottom: 10px;">Nhà Xinh</h2>
+                <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+                <ul class="footer_chinhsach"> 
+                    <div class="item"> 
+                        <a href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Giới thiệu</a>
+                    </div>
+                    <div class="item"> 
+                        <a href="../html/ChinhSachDoiTraHang.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i> Chính sách đổi trả hàng</a>
+                    </div>
+                    <div class="item"> 
+                        <a  href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Thẻ hội viên</a>
+                    </div>
+                    <div class="item"> 
+                        <a href="../html/ChinhSachBaoHanh.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Chính sách bảo hành</a>
+                    </div>
+                    <div class="item"> 
+                        <a href="../html/ChinhSachBaoHanh.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Tuyển dụng</a>
+                    </div>
+                </ul>
+            </div>
+            <div  style="margin-left: 25px;" class="box">   
+                <h2 style="margin-bottom: 10px;">Cảm hứng</h2>
+                <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+                <ul class="footer_chinhsach"> 
+                    <div class="item"> 
+                        <a href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Sản phẩm</a>
+                    </div>
+                    <div class="item"> 
+                        <a href="../html/ChinhSachDoiTraHang.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Ý tưởng và cảm hứng</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h2 style="margin-bottom: 10px;">NEW LETTERS</h2>
+                <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+                <div class="footer_Location">
+                    <div class="icon_contact">
+                        <a href="https://www.facebook.com/Tus1812" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0e4095;"></i></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4479d5;"></i>  </a>
+                        <a href="https://www.instagram.com/lp.nguyen03/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ce46bc;"></i> </i></a>
+                    </div>
+                    <div class="item">
+                        <div class="item_email">
+                            <p><i class="fa-solid fa-envelope fa-lg" style="color: #e3f20d;"></i><span style="padding-left: 10px;">:</span>nhaxinhcare@akacompany.com.vn</p><br>
+                        </div>
+                        
+                    </div> 
+                    <div class="item">
+                        <H3>Liên hệ</H3>
+                        <div class="item_phones">
+                            <p><i class="fa-solid fa-phone fa-sm" style="color: #d7d12d;"></i><span style="padding-left: 10px;">:</span>18007200</p>
+                        </div>
+                    </div>
+                    <div class="input_email"> 
+                        <input style="width: 180px; height: 30px;background-color: rgba(254, 248, 248, 0.89);border: #efeaea;" type="email" placeholder="Nhập email của bạn" >
+                        <button >ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
