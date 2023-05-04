@@ -1,61 +1,214 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website with Login & Registration Form</title>
-    <link rel="stylesheet" href="../css/dangnhap.css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <nav class="nav">
-        <a href="#" class="nav_logo"><img src="../assets/logo.png" alt=""></a>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../js/boostrap/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="../fonts/fontawesome-free-6.4.0-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" href="../css/header_footer.css">
+	<title>Login</title>
 
-      
 
-        <button class="button" id="form-open">Login</button>
-      </nav>
-    </header>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <div id="header_top">
+          <div class="item_left">
+              <div class="item">
+                  <span> <i class="fa-solid fa-globe" style="color: #4b4a59;"></i> <span style="color:red">VN</span>| EN</span>
+              </div>
+              <div>
+                  <span><i class="fa-solid fa-phone-volume" style="color: #070b12; padding-right: 10px;"></i>1800 7200</span>
+              </div>
+              <div><a style="text-decoration: none; color: black;" href="../html/AboutUs.html">About us</a></div>
+          </div>
+          <div class="item_right">
+              <div id="actions">
+                  <div class="item">
+                      <a href=""><i class="fa-regular fa-heart fa-sm"></i></a>
+                  </div>
+                  <div class="item">
+                     <a href="../html/HeThongCuaHang.html" > <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i> </a>
+                  </div>
+                   <div class="item">
+                       <a href=""><img src="../assets/cart.png" alt=""></a>
+                   </div>
+                   <div  class="item">
+                      <a  style="color: #626A67; border:1px solid black ;border-radius: 8px;padding: 4px;font-size: 14px;" href="../html/Login.html"><span>Đăng nhập </span><i class="fa-solid fa-user fa-sm"></i></a>
+                     </div>
+               </div>
+          </div>
+      </div>
+  </div>
+  <div  class="headermenu" id="menu">
+      <div class="logo">
+          <a href="../html/TrangChu.html"><img src="../assets/logochinh.png" alt=""></a>
+      </div>
+      <ul class="item">
+          <li><a href="../html/TrangChu.html">Trang  chủ</a> </li>
+          <div class="dropdown">
+          <li><a href="../html/Product.html" class="dropbtn">Sản Phẩm <i class="fa-solid fa-angle-down"></i></a> 
+              <div class="dropdown-content">
+                  <a href="#">Bàn</a>
+                  <a href="#">Ghế</a>
+                  <a href="#">Sofa</a>
+                </div>
+              </div>
+          </li>
+          <li><a href="../html/Blog.html">Góc cảm hứng</a></li>
+          <li><a href="../html/Contact.html">Liên hệ</a></li>
+          <li><a href="../html/AboutUs.html">About us</a></li>
+      </ul>
+      <div class= "search">
+          <div>
+              <input type="text" placeholder="Search...." alt="" >
+          </div>
+          <div class="iconsearch">
+              <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+          </div>
+      </div>
+  </div>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Login Account
+					</span>
+					<span class="login100-form-title p-b-48">
+          <img src="../assets/logo.png" alt="">		
+          		</span>
 
-    <!-- Home -->
-    <div class="home">
-      <div class="form_container">
-        <i class="uil uil-times form_close"></i>
-        <!-- Login From -->
-        <div class="form login_form">
-          <form action="#">
-            <h2>Login</h2>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" type="text" name="email" >
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
 
-            <div class="input_box">
-              <input type="email" placeholder="Enter your email" required />
-              <i class="uil uil-envelope-alt email"></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Enter your password" required />
-              <i class="uil uil-lock password"></i>
-              <i class="uil uil-eye-slash pw_hide"></i>
-            </div>
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="pass" >
+						<span class="focus-input100" data-placeholder="Password" ></span>
+					</div>
 
-            <div class="option_field">
-              <span class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Remember me</label>
-              </span>
-              <a href="../html/Registered.html" class="forgot_pw">Forgot password?</a>
-            </div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" >
+                 <a class="login100-form-btn" >Login</a> 
 
-            <button class="button">Login Now</button>
+                 
+							</button>
+             
+						</div>
+					</div>
 
-            <div class="login_signup">Don't have an account? <a href="../html/Registered.html" id="">Signup</a></div>
-          </form>
+					<div class="text-center p-t-115">
+						<span class="txt1">
+							Don’t have an account?
+						</span>
+
+						<a class="txt2" href="../html/Registered.html">
+							Sign Up
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+  <div class="footer">
+    <div style="margin-left: 35px;" class="box">
+        <h2 style="margin-bottom: 10px;">Kết nối với chúng tôi</h2>
+        <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+        <div class="logo1">
+            <img src="../assets/logo.png" alt="">
         </div>
-       
-   
+        <p>Follow us</p>
+        <p style="font-size: 15px;">instagram-Youtube-Facebook</p>
+        <p style="padding: 8px; border: 2px solid white;width: 160px; margin-top: 20px;"><a style="text-decoration: none; color: white;" href="../html/HeThongCuaHang.html">Hệ thống cửa hàng</a></p>
 
-    <script src="../js/jslogin.js"></script>
-  </body>
+    </div>
+    <div style="margin-left: 25px;" class="box">   
+        <h2 style="margin-bottom: 10px;">Nhà Xinh</h2>
+        <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+        <ul class="footer_chinhsach"> 
+            <div class="item"> 
+                <a href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Giới thiệu</a>
+            </div>
+            <div class="item"> 
+                <a href="../html/ChinhSachDoiTraHang.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i> Chính sách đổi trả hàng</a>
+            </div>
+            <div class="item"> 
+                <a  href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Thẻ hội viên</a>
+            </div>
+            <div class="item"> 
+                <a href="../html/ChinhSachBaoHanh.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Chính sách bảo hành</a>
+            </div>
+            <div class="item"> 
+                <a href="../html/ChinhSachBaoHanh.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Tuyển dụng</a>
+            </div>
+        </ul>
+    </div>
+    <div  style="margin-left: 25px;" class="box">   
+        <h2 style="margin-bottom: 10px;">Cảm hứng</h2>
+        <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+        <ul class="footer_chinhsach"> 
+            <div class="item"> 
+                <a href=""><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Sản phẩm</a>
+            </div>
+            <div class="item"> 
+                <a href="../html/Blog.html"><i class="fa-solid fa-check fa-lg" style="color: #e2f019; padding-right: 10px;"></i>Ý tưởng và cảm hứng</a>
+            </div>
+        </ul>
+    </div>
+    <div class="box">
+        <h2 style="margin-bottom: 10px;">NEW LETTERS</h2>
+        <hr style="margin-bottom: 15px; font-weight: 900;" width="23px">
+        <div class="footer_Location">
+            <div class="icon_contact">
+                <a href="https://www.facebook.com/Tus1812" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0e4095;"></i></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4479d5;"></i>  </a>
+                <a href="https://www.instagram.com/lp.nguyen03/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ce46bc;"></i> </i></a>
+            </div>
+            <div class="item">
+                <div class="item_email">
+                    <p><i class="fa-solid fa-envelope fa-lg" style="color: #e3f20d;"></i><span style="padding-left: 10px;">:</span>nhaxinhcare@akacompany.com.vn</p><br>
+                </div>
+                
+            </div> 
+            <div class="item">
+                <H3>Liên hệ</H3>
+                <div class="item_phones">
+                    <p><i class="fa-solid fa-phone fa-sm" style="color: #d7d12d;"></i><span style="padding-left: 10px;">:</span>18007200</p>
+                </div>
+            </div>
+            <div class="input_email"> 
+                <input style="width: 180px; height: 30px;background-color: rgba(254, 248, 248, 0.89);border: #efeaea;" type="email" placeholder="Nhập email của bạn" >
+                <button >ĐĂNG KÝ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script src="../js/script.js"></script>
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="../js/boostrap/jquery-3.6.4.min.js"></script>
+<!--===============================================================================================-->
+
+	<script src="../js/boostrap/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+
+<!--===============================================================================================-->
+	<script src="../js/main.js"></script>
+
+</body>
 </html>
