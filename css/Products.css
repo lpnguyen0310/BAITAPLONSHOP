@@ -69,6 +69,39 @@
     margin-bottom: 10px;
 }
 
+#center .list_number ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#center .list_number ul li{
+    border:1px solid #0A0A0B !important;
+    padding: 10px 15px;
+    margin-left: 13px;
+    display: block;
+    
+}
+
+#center .list_number ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#center .list_number ul li a{
+    text-decoration: none;
+   
+}
+
+#center .list_number ul li:hover{
+    color: white;
+    background-color: rgb(176, 171, 171);
+}
+
 
 /*========================================= PRODUCT ====================================*/
 #list_product{
